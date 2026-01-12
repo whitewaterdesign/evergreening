@@ -1,0 +1,23 @@
+columns:
+  - component
+  - current_version
+  - latest_version
+  - security_fixes
+  - other_fixes
+  - notes
+  - link
+rows:
+  - component: mongodb-node-client
+    current_version: 6.18
+    latest_version: 7.0
+    security_fixes: |
+      - fix number one
+      - fix number two
+      - fix number three
+    other_fixes: |
+      - other fix 1
+      - other fix 2
+    notes: |
+      - note 1
+      - note 2
+    link: https://www.mongodb.com/docs/drivers/node/current/reference/release-notes/
