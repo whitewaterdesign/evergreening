@@ -1,0 +1,187 @@
+u<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreening Dashboard</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            padding: 1rem;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        /* Markdown List Styling */
+        td ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        td p:first-child {
+            margin-top: 0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+
+        tr:hover {
+            background-color: #f1f8e9;
+        }
+
+        .link-cell a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .link-cell a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evergreening Status</h1>
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        
+                            <th>component</th>
+                        
+                            <th>current version</th>
+                        
+                            <th>latest version</th>
+                        
+                            <th>security fixes</th>
+                        
+                            <th>other fixes</th>
+                        
+                            <th>notes</th>
+                        
+                            <th>link</th>
+                        
+                    </tr>
+                </thead>
+                  <tbody>
+                    
+                        <tr>
+                            
+                                <td class="">
+                                    
+                                        <p>mongodb-node-client</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <p>6.18</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <p>7.0</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <ul>
+<li>fix number one</li>
+<li>fix number two</li>
+<li>fix number three</li>
+</ul>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <ul>
+<li>other fix 1</li>
+<li>other fix 2</li>
+</ul>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <ul>
+<li>note 1</li>
+<li>note 2</li>
+</ul>
+                                    
+                                </td>
+                            
+                                <td class="link-cell">
+                                    
+                                        <a href="https://www.mongodb.com/docs/drivers/node/current/reference/release-notes/
+https://www.mongodb.com/docs/drivers/node/current/reference/release-notes/
+" target="_blank">View Docs →</a>
+                                    
+                                </td>
+                            
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
