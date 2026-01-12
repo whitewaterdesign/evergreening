@@ -1,5 +1,7 @@
+from app import run_pipeline
+
 def main():
-    print("Hello from python-backend-template!")
+    run_pipeline()
 
 
 if __name__ == "__main__":
