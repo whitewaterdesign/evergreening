@@ -5,6 +5,8 @@ from typing import List, Optional
 import httpx
 from bs4 import BeautifulSoup
 
+from app.models.input import EvergreenYamlInput
+
 
 def fetch_page_text(url: str, *, http2: bool = False, timeout: int = 10) -> str:
     """
@@ -55,6 +57,14 @@ def fetch_and_prepare(url: str, chunk_size: Optional[int] = None) -> List[str] |
     if chunk_size:
         return chunk_text(text, chunk_size=chunk_size)
     return text
+
+
+def fetch_and_prepare_candidate(evergreen_candidate: EvergreenYamlInput) -> str:
+    """
+    Fetches and prepares the candidate's changelog or release notes for processing.
+    """
+    url = evergreen_candidate["link"]
+    return fetch_and_prepare(url)
 
 
 # Example usage:

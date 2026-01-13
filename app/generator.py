@@ -6,7 +6,7 @@ import markdown
 
 def generate_html():
     # Setup paths
-    project_root = Path(__file__).parent
+    project_root = Path(__file__).parent.parent
     data_file = project_root / "data" / "evergreening-output.yaml"
     template_dir = project_root / "template"
     output_file = project_root / "public" / "index.html"
@@ -40,3 +40,6 @@ def generate_html():
         f.write(html_content)
 
     print(f"Successfully generated {output_file}")
+
+if __name__ == "__main__":
+    generate_html()

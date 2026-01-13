@@ -8,3 +8,7 @@ rows:
     title: Agno
     version: 2.3.19
     link: https://github.com/agno-agi/agno/releases
+  - component: agno
+    title: Agno
+    version: 2.3.19
+    link: https://github.com/agno-agi/agno/releases

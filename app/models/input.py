@@ -1,5 +1,13 @@
+from typing import TypedDict
+
 from pydantic import Field, BaseModel
 
+class EvergreenYamlInput(TypedDict):
+    component: str
+    title: str
+    version: str
+    link: str
+    
 
 class EvergreenInput(BaseModel):
     """Structured input for package that needs evergreening"""

@@ -1,4 +1,4 @@
-u<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -125,28 +125,41 @@ u<!DOCTYPE html>
                             
                                 <td class="">
                                     
-                                        <p>mongodb-node-client</p>
+                                        <p>agno</p>
                                     
                                 </td>
                             
                                 <td class="">
                                     
-                                        <p>6.18</p>
+                                        <p>2.3.19</p>
                                     
                                 </td>
                             
                                 <td class="">
                                     
-                                        <p>7.0</p>
+                                        <p>2.3.26</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        
                                     
                                 </td>
                             
                                 <td class="">
                                     
                                         <ul>
-<li>fix number one</li>
-<li>fix number two</li>
-<li>fix number three</li>
+<li>Added per-request isolation for agents/teams/workflows in shared FastAPI processes (v2.3.26).</li>
+<li>Introduced LearningMachine for unified, multi-type agent learning (v2.3.25).</li>
+<li>Code chunker now leverages ASTs for more contextual splitting (v2.3.25).</li>
+<li>Fixed issues in BrowserbaseTools and GoogleBigQueryTools (v2.3.25).</li>
+<li>Skip retries for non-retryable errors from LLM providers (auth/context) (v2.3.25).</li>
+<li>Improved MongoDB handshake metadata (v2.3.24).</li>
+<li>Added chunking improvements and more flexible markdown chunking (v2.3.24).</li>
+<li>Enforced base directory restrictions for Python/MLXTranscribeTools with override (v2.3.24).</li>
+<li>Improvements for agent async tool support, team run cancellation, and session naming (v2.3.23).</li>
+<li>Multiple bug fixes for HITL, session sorting, memory date parsing, db migration router, and others (across versions up to v2.3.26).</li>
 </ul>
                                     
                                 </td>
@@ -154,26 +167,79 @@ u<!DOCTYPE html>
                                 <td class="">
                                     
                                         <ul>
-<li>other fix 1</li>
-<li>other fix 2</li>
-</ul>
-                                    
-                                </td>
-                            
-                                <td class="">
-                                    
-                                        <ul>
-<li>note 1</li>
-<li>note 2</li>
+<li>The addition of per-request isolation and restricted tool operation outside the base directory could impact how deployments are handled in shared server or multi-user contexts.</li>
+<li>LearningMachine introduces a new agent learning system which may require new configuration for best results.</li>
 </ul>
                                     
                                 </td>
                             
                                 <td class="link-cell">
                                     
-                                        <a href="https://www.mongodb.com/docs/drivers/node/current/reference/release-notes/
-https://www.mongodb.com/docs/drivers/node/current/reference/release-notes/
-" target="_blank">View Docs →</a>
+                                        <a href="https://github.com/agno-agi/agno/releases" target="_blank">View Docs →</a>
+                                    
+                                </td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <td class="">
+                                    
+                                        <p>agno</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <p>2.3.19</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <p>2.3.26</p>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <ul>
+<li>Improved per-request isolation for agents/teams/workflows (v2.3.26)</li>
+<li>Added LearningMachine for unified agent learning from interactions (v2.3.25)</li>
+<li>Introduced AST-based code chunking for better code segmentation (v2.3.25)</li>
+<li>Fixed BrowserbaseTools to correctly parse large pages (v2.3.25)</li>
+<li>Improved error handling for non-retryable errors with LLM providers and fixed URL edge cases (v2.3.25)</li>
+<li>SQL and chunk size fixes for BigQuery and DocumentChunking tools (v2.3.25)</li>
+<li>MongoDB connection handshake now includes Agno version metadata (v2.3.24)</li>
+<li>Restricted tools from operating outside their base directories, with option to relax (v2.3.24)</li>
+<li>Async tool support and team run cancellation fixes (v2.3.23)</li>
+<li>Added agent skill system, dynamic headers in MCPTools, beta A2A remote agents (v2.3.22)</li>
+<li>Chunking, DB, and middleware robustness improvements (v2.3.22)</li>
+<li>Agent as Judge supported, run input and embedder fixes (v2.3.21)</li>
+<li>Improved run cancellation, legacy memory, and session support (v2.3.20)</li>
+</ul>
+                                    
+                                </td>
+                            
+                                <td class="">
+                                    
+                                        <ul>
+<li>The new per-request isolation in shared FastAPI processes may impact deployment or multi-agent workflow architecture (v2.3.26)</li>
+<li>Feature restricting tool access to within base directories could break workflows relying on broader access unless opt-out is configured (v2.3.24)</li>
+<li>Major new capabilities like unified agent learning and remote agents may require review of configuration settings or system architecture (introduced in v2.3.25, v2.3.17)</li>
+</ul>
+                                    
+                                </td>
+                            
+                                <td class="link-cell">
+                                    
+                                        <a href="https://github.com/agno-agi/agno/releases" target="_blank">View Docs →</a>
                                     
                                 </td>
                             

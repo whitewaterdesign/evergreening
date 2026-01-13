@@ -1,23 +1,86 @@
+
 columns:
-  - component
-  - current_version
-  - latest_version
-  - security_fixes
-  - other_fixes
-  - notes
-  - link
+- component
+- current_version
+- latest_version
+- security_fixes
+- other_fixes
+- notes
+- link
 rows:
-  - component: mongodb-node-client
-    current_version: 6.18
-    latest_version: 7.0
-    security_fixes: |
-      - fix number one
-      - fix number two
-      - fix number three
-    other_fixes: |
-      - other fix 1
-      - other fix 2
-    notes: |
-      - note 1
-      - note 2
-    link: https://www.mongodb.com/docs/drivers/node/current/reference/release-notes/
+- component: agno
+  current_version: 2.3.19
+  latest_version: 2.3.26
+  security_fixes: ''
+  other_fixes: '- Added per-request isolation for agents/teams/workflows in shared
+    FastAPI processes (v2.3.26).
+
+    - Introduced LearningMachine for unified, multi-type agent learning (v2.3.25).
+
+    - Code chunker now leverages ASTs for more contextual splitting (v2.3.25).
+
+    - Fixed issues in BrowserbaseTools and GoogleBigQueryTools (v2.3.25).
+
+    - Skip retries for non-retryable errors from LLM providers (auth/context) (v2.3.25).
+
+    - Improved MongoDB handshake metadata (v2.3.24).
+
+    - Added chunking improvements and more flexible markdown chunking (v2.3.24).
+
+    - Enforced base directory restrictions for Python/MLXTranscribeTools with override
+    (v2.3.24).
+
+    - Improvements for agent async tool support, team run cancellation, and session
+    naming (v2.3.23).
+
+    - Multiple bug fixes for HITL, session sorting, memory date parsing, db migration
+    router, and others (across versions up to v2.3.26).'
+  notes: '- The addition of per-request isolation and restricted tool operation outside
+    the base directory could impact how deployments are handled in shared server or
+    multi-user contexts.
+
+    - LearningMachine introduces a new agent learning system which may require new
+    configuration for best results.'
+  link: https://github.com/agno-agi/agno/releases
+- component: agno
+  current_version: 2.3.19
+  latest_version: 2.3.26
+  security_fixes: ''
+  other_fixes: '- Improved per-request isolation for agents/teams/workflows (v2.3.26)
+
+    - Added LearningMachine for unified agent learning from interactions (v2.3.25)
+
+    - Introduced AST-based code chunking for better code segmentation (v2.3.25)
+
+    - Fixed BrowserbaseTools to correctly parse large pages (v2.3.25)
+
+    - Improved error handling for non-retryable errors with LLM providers and fixed
+    URL edge cases (v2.3.25)
+
+    - SQL and chunk size fixes for BigQuery and DocumentChunking tools (v2.3.25)
+
+    - MongoDB connection handshake now includes Agno version metadata (v2.3.24)
+
+    - Restricted tools from operating outside their base directories, with option
+    to relax (v2.3.24)
+
+    - Async tool support and team run cancellation fixes (v2.3.23)
+
+    - Added agent skill system, dynamic headers in MCPTools, beta A2A remote agents
+    (v2.3.22)
+
+    - Chunking, DB, and middleware robustness improvements (v2.3.22)
+
+    - Agent as Judge supported, run input and embedder fixes (v2.3.21)
+
+    - Improved run cancellation, legacy memory, and session support (v2.3.20)'
+  notes: '- The new per-request isolation in shared FastAPI processes may impact deployment
+    or multi-agent workflow architecture (v2.3.26)
+
+    - Feature restricting tool access to within base directories could break workflows
+    relying on broader access unless opt-out is configured (v2.3.24)
+
+    - Major new capabilities like unified agent learning and remote agents may require
+    review of configuration settings or system architecture (introduced in v2.3.25,
+    v2.3.17)'
+  link: https://github.com/agno-agi/agno/releases
